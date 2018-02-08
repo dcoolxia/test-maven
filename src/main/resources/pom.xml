@@ -5,11 +5,6 @@
     <artifactId>test-maven</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<jdk.version>1.8</jdk.version>
-	</properties>
 
     <build>
         <!-- 打包生成的名称 -->
@@ -60,15 +55,6 @@
 					</execution>
 				</executions>
 			</plugin> -->
-			
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>${jdk.version}</source>
-					<target>${jdk.version}</target>
-				</configuration>
-			</plugin>
         </plugins>
         
         <!-- maven动态切换配置文件 -->
